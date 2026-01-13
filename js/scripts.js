@@ -76,23 +76,23 @@ function procesarFormulario() {
     // validacion regex del codigo del producto
     const codigoRegex = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]+$/;
     if (!codigoRegex.test(codigo)) {
-        alert("El código del producto debe incluir letras y números para que sea valido");
+        alert("El código del producto debe contener letras y números");
         return;
     }
     //validacion del largo del codigo minimo 5 y maximo 15 caracteres
     if (codigo.length < 5 || codigo.length > 15) {
-        alert("El código del producto debe contener entre 5 y 15 caracteres para ser valido");
+        alert("El código del producto debe tener entre 5 y 15 caracteres.");
         return;
     }
 
-    // Validacion nombre
+    // Validacion nombre_producto
     if (nombre === "") {
         alert("El nombre del producto no puede estar en blanco.");
         return;
     }
     //validacion largo nombre minimo 2 y maximo 50 caracters
     if (nombre.length < 2 || nombre.length > 50) {
-        alert("El nombre del producto debe contener entre 2 y 50 caracteres.");
+        alert("El nombre del producto debe tener entre 2 y 50 caracteres.");
         return;
     }
 

@@ -32,6 +32,16 @@ PASO 3: CONFIGURACIÓN DE PHP
    extension=pgsql
 (Esto se logra llendo a la carpeta de instalacion de php y abrir el archivo con Block de notas y editarlo)
 
+PASO 3.1: CONEXION CON BASE DE DATOS
+
+Para realizar la conexion a la base de datos se debe editar las siguientes lineas de codigo
+que se encuentran en php/db_conection.php
+
+$host = 'localhost';
+$dbname = 'desis';
+$user = 'postgres';
+$password = 'passdb';
+
 PASO 4: EJECUCIÓN
 1. Abra una terminal en la carpeta raíz del proyecto.
 2. Ejecute el servidor interno de PHP con el comando:

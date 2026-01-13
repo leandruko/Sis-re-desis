@@ -17,7 +17,7 @@ try {
     $materiales = $_POST['materiales_texto'] ?? '';
     $descripcion = $_POST['descripcion'] ?? '';
 
-    //Validacion del codigo no esta repetido dentro de la base de datos
+    //Validacion del codigo si esta repetido dentro de la base de datos
     $stmtCheck = $pdo->prepare("SELECT COUNT(*) FROM productos WHERE codigo = ?");
     $stmtCheck->execute([$codigo]);
     $existe = $stmtCheck->fetchColumn();
