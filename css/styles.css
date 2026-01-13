@@ -1,0 +1,63 @@
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 20px;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+
+h2 {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    display: block; 
+    margin-bottom: 3px;
+}
+
+
+#btnGuardar {
+    background-color: #1aab8a;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+#btnGuardar:hover {
+    opacity: 0.9;
+}
+
+select:disabled {
+    background-color: #f0f0f0;
+}
