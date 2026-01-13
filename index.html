@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desis - Registro de productos</title>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Registro de Productos Desis</h2>
+        
+        <form id="formProducto">
+            
+            <div class="form-group">
+                <label for="codigo">Codigo Producto:</label>
+                <input type="text" id="codigo" placeholder="Ej: abc3245">
+            </div>
+
+            <div class="form-group">
+                <label for="nombre">Nombre Producto:</label>
+                <input type="text" id="nombre" placeholder="Ingrese nombre">
+            </div>
+
+            <div class="form-group">
+                <label for="bodega">Bodega:</label>
+                <select id="bodega">
+                    <option value="">Seleccione Bodega</option>
+                    </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sucursal">Sucursal:</label>
+                <select id="sucursal" disabled>
+                    <option value="">Seleccione una Bodega primero</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="moneda">Moneda:</label>
+                <select id="moneda">
+                    <option value="">Seleccione Moneda</option>
+                    </select>
+            </div>
+
+            <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="text" id="precio" placeholder="0.00">
+            </div>
+
+            <button type="button" id="btnGuardar">Guardar Producto</button>
+        </form>
+    </div>
+
+
+</body>
+</html>
