@@ -26,6 +26,8 @@ CREATE TABLE productos (
     descripcion TEXT NOT NULL
 );
 
+-- datos de prueba
+
 INSERT INTO bodegas (nombre) VALUES ('Bodega 1'), ('Bodega 2');
 INSERT INTO monedas (nombre) VALUES ('DOLAR');
 INSERT INTO sucursales (bodega_id, nombre) VALUES (1, 'Sucursal 1'), (1, 'Sucursal 2');
