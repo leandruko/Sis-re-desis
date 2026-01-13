@@ -1,0 +1,39 @@
+Sistema de registro de pedidos Desis
+---
+Requisitos basicos
+---
+1. Lenguaje: PHP 8.0 o superior.
+2. Base de Datos: PostgreSQL 14 o superior.(En este caso yo utilice la version 18)
+3. Servidor Web: Apache o PHP Built-in Server. (Yo utilice PHP Built-in)
+4. Navegador Web moderno (Chrome, Firefox, Edge, Brave).(Use brave)
+
+---
+Estructura de carpetas del proyecto 
+---
+/css    -> Hoja de estilos del sistema
+/js     -> Logica frontend y validaciones
+/php    -> Lohica backend y coneccion con base de datos en esta caso PostgreSQL
+/sql    -> Script de creacion de tablas
+
+---
+INSTALACIÓN Y CONFIGURACIÓN:
+---
+
+(Antes que nada tener ya instalado php 8.0 o superior para el funcionamiento del proyecto)
+
+PASO 1: BASE DE DATOS
+1. Cree una base de datos en PostgreSQL en este caso se llama Desis.
+2. Importe el archivo ubicado en la carpeta: /sql/script.sql
+
+PASO 3: CONFIGURACIÓN DE PHP
+1. Asegúrese de tener habilitadas las extensiones para PostgreSQL en su 
+   archivo 'php.ini'. Descomente las líneas:
+   extension=pdo_pgsql
+   extension=pgsql
+(Esto se logra llendo a la carpeta de instalacion de php y abrir el archivo con Block de notas y editarlo)
+
+PASO 4: EJECUCIÓN
+1. Abra una terminal en la carpeta raíz del proyecto.
+2. Ejecute el servidor interno de PHP con el comando:
+   php -S localhost:8000
+3. Abra su navegador e ingrese a: http://localhost:8000

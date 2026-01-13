@@ -12,7 +12,7 @@ try {
         $bodegas = $stmt->fetchAll();
 
         // obtenemos las monedas desde la base de datos
-        $stmt = $pdo->query("SELECT id, nombre, simbolo FROM monedas ORDER BY nombre ASC");
+        $stmt = $pdo->query("SELECT id, nombre FROM monedas ORDER BY nombre ASC");
         $monedas = $stmt->fetchAll();
 
         echo json_encode([
